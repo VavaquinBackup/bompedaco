@@ -1,0 +1,507 @@
+:root {
+    /* fundo da pagina */
+    --clr-body: #fffbe7;
+    /* fundo dos cards */
+    --clr-card: #ffffff;
+    /* borda do header dos cards */
+    --clr-border: #ffffff;
+    /* texto normal */
+    --clr-text: #000000;
+    /* texto links */
+    --clr-link: tomato;
+    /* texto navbar */
+    --clr-nav: #ffffff;
+    /* fundo do footer */
+    --clr-footer: #333333;
+    /* texto tooltip linkedin instagram etc */
+    --clr-tooltip: #2e222f;
+    /* fundo tooltip lnkedin */
+    --clr-linkedin: #0274b3;
+    /* fonte custom */
+    --font: 'VT323', monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font), Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to top, #ecb283, #fff1d7);
+    color: var(--clr-text);
+}
+
+.menu{
+    justify-content: center;
+    align-self: center;
+}
+
+img {
+    max-height: clamp(100px, 100%, 1200px);
+    max-width: clamp(100px, 100%, 1200px);
+}
+
+a {
+    color: var(--clr-link);
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* cabessario */
+.headerheader{
+    max-height: clamp(100px, 100%, 1200px);
+    max-width: clamp(100px, 100%, 1200px);
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    
+}
+header {
+    flex-direction: row;
+    font-family: var(--font);
+    width: clamp(100px, 100%, 1200px);
+    padding-top: 10px;
+    padding-bottom: 8px;
+    margin-bottom: -1px;
+    background-color: var(--clr-card);
+    border-bottom: 2px solid #ecb283;
+    
+    
+}
+
+header img {
+    max-width: 50px;
+
+
+}
+.menu-button{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100px;
+    border-bottom: 2px solid #ecb283;
+    border-radius: 20px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: var(--clr-white);
+    font-size: 1.2em;
+}
+
+/* fim cabessario */
+
+
+/* banner */
+.banner {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* fim banner */
+
+
+/* main */
+main {
+    width: clamp(300px, 100vw, 1200px);
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 200px;
+}
+
+.imgbanner{
+    margin-bottom: -70px;
+
+}
+
+section {
+    width: 100%;
+    background-color: var(--clr-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border-top: 2px solid #ecb283;
+}
+
+.section2 {
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    border-top: 2px solid #ecb283;
+}
+
+
+section .card-header {
+    width: 100%;
+    position: relative;
+}
+
+
+
+section .card-border-bl {
+    width: 6px;
+    height: 34px;
+    left: -2px;
+}
+
+section .card-border-br {
+    width: 6px;
+    height: 34px;
+    right: -2px;
+}
+
+section .card-border-bt {
+    top: 0;
+    left: 4px;
+    height: 2px;
+    width: calc(100% - 8px);
+}
+
+section h2 {
+    font-family: 'Lobster';
+    font-size: xx-large;
+    padding-top: 12px;
+    padding-bottom: -12px;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    color: #ff943e;
+    
+
+}
+
+
+.titulo{
+    font-family: 'Lobster';
+    font-size: xx-large;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    color: #ff943e;
+}
+
+.texto222 {
+    font-family: 'Lobster';
+    font-size: x-large;
+
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    color: #ff943e;
+    
+
+}
+
+section .card {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+}
+
+section .card .card-item {
+    width: 50%;
+    padding: 10px 20px 20px 20px;
+}
+
+/* fim main */
+
+
+/* card about */
+.about-text {
+    font-family: 'Caveat';
+    font-size:x-large;
+    color: rgb(36, 36, 36);
+}
+
+.moldura{
+    margin-bottom: -20px;
+    margin-top: -48px;
+    width: 200px;
+
+
+}
+
+.about-img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    border-top: 2px solid #ecb283;
+    border-bottom: 1px solid #000;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+/* fim card about */
+
+
+/* card galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.gallery-image {
+    padding: 5px;
+    width: 33%;
+}
+
+/* fim card galeria */
+
+/* card comission */
+
+.titulo-texto{
+    text-align: center;
+    font-size: larger;
+}
+
+
+/* card contato */
+
+.contacts-list .icon-content {
+    margin: 0 10px;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.contacts-list .icon-content .tooltip {
+    position: absolute;
+    top: 100%;
+    right: 110%;
+    transform: translateY(200%);
+    color: #2e222f;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.contacts-list .icon-content:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    top: -66px;
+}
+
+.contacts-list .icon-content a {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #4d4d4d;
+    background-color: #2e222f;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacts-list .icon-content a:hover {
+    box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+}
+
+.contacts-list .icon-content a svg {
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+}
+
+.contacts-list .icon-content a:hover {
+    color: white;
+}
+
+.contacts-list .icon-content a .filled {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacts-list .icon-content a:hover .filled {
+    height: 100%;
+}
+
+.contacts-list .icon-content a[data-social="X"] .filled,
+.contacts-list .icon-content a[data-social="X"]~.tooltip {
+    background-color: #0274b3;
+}
+
+.contacts-list .icon-content a[data-social="github"] .filled,
+.contacts-list .icon-content a[data-social="github"]~.tooltip {
+    background-color: #24262a;
+}
+
+.contacts-list .icon-content a[data-social=""] .filled,
+.contacts-list .icon-content a[data-social=""]~.tooltip {
+    background: linear-gradient(45deg,
+            #405de6,
+            #5b51db,
+            #b33ab4,
+            #c135b4,
+            #e1306c,
+            #fd1f1f);
+}
+
+.contacts-list .icon-content a[data-social="youtube"] .filled,
+.contacts-list .icon-content a[data-social="youtube"]~.tooltip {
+    background-color: #ff0000;
+}
+
+/* fim card contato */
+
+
+/* responsa */
+@media screen and (max-width: 799px) {
+
+    /* responsividade cards */
+    .card {
+        flex-direction: column;
+    }
+
+    section .card .card-item {
+        width: 100%;
+    }
+
+    /* responsividade galeria */
+    .gallery-image {
+        width: 50%;
+    }
+}
+
+
+.texto22{
+
+    font-family: 'Caveat';
+    font-size:x-large;
+}
+
+
+
+
+
+.image-gallery {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 20px;
+    border-bottom: 2px solid #ecb283;
+    
+    
+  
+
+
+  }
+  
+  .gallery-container {
+    display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+    
+    
+  }
+  
+  .gallery-slide {
+    min-width: 100%;
+    transition: opacity 1s ease;
+    
+  }
+  
+  .gallery-slide img {
+    width: 100%;
+    vertical-align: middle;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .indicators {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+
+  
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+  }
+  
+  .dot:hover, .dot.active {
+    background-color: #717171;
+  
+  }
+
+  .mapa{
+    padding-bottom: 50px;
+
+  }
